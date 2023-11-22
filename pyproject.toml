@@ -3,10 +3,10 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "2023-autumn-AB-python-HW6"
+name = "2023-autumn-AB-python-HW9"
 version = "0.1.0"
-description = "HW6"
-authors = ["author"]
+description = "HW9"
+authors = ["Ilya Lystsov"]
 license = "MIT"
 
 [tool.poetry.dependencies]
