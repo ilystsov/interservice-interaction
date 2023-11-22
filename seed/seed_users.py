@@ -1,5 +1,3 @@
-import uuid
-
 from faker import Faker
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -13,11 +11,10 @@ SessionLocal = sessionmaker(bind=engine)
 fake = Faker()
 
 
-def seed_users():
+def seed_users() -> None:
     # Generate 100 fake names and emails
     fake_users = [
         User(
-            id=uuid.uuid4(),
             name=fake.name(),
             email=fake.email(),
         )

@@ -23,7 +23,7 @@ python-dateutil = ">=2.8.2"
 pydantic = "^1.10.5, <2"
 aenum = ">=3.1.11"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "^6.2.5"
 pytest-asyncio = "^0.15.1"
 pylint = "^3.0.1"
@@ -36,6 +36,8 @@ types-requests = "^2.31.0.9"
 mypy = "^1.6.0"
 alembic = "^1.12.0"
 faker = "^19.10.0"
+requests = "^2.31.0"
+pytest-randomly = "^3.15.0"
 
 [build]
 script = "poetry build"

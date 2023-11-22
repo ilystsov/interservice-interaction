@@ -23,6 +23,20 @@ services:
       - PYTHONUNBUFFERED=1
     depends_on:
       - db
+      - blacklist_tests
+
+  blacklist_tests:
+    build:
+      context: .
+      dockerfile: docker/blacklist_tests/Dockerfile
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    volumes:
+      - .:/opt/app
+    environment:
+      - PYTHONUNBUFFERED=1
 
   db:
     image: postgres:13
